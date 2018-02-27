@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <header>
+        <div class="jumbotron text-center">
+            <div class="card-block">
+                <h1 class="card-title">
+                    {{ site.title }}
+                </h1>
+                <h3 class="card-text">
+                    {{ site.tagline }}
+                </h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+  </body>
+</html>
