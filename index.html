@@ -2,9 +2,9 @@
 layout: default
 title: BSA Troop 65 Astoria
 ---
-<div class="container">
-    <div class="row-fluid">
-        <div class="card-deck">
+<div class="container-responsive">
+    <div class="row-fluid mt-1">
+        <div class="card-deck m-auto">
             <div class="card">
                 <h3 class="card-header text-center">
                     Latest News
@@ -13,14 +13,31 @@ title: BSA Troop 65 Astoria
                     Here's what we're up to.
                 </p>
                 <section id="main_content">
-                        <ul>
+                        <ul class="list-group list-group-flush">
                         {% for post in paginator.posts %}
-                          <li>
+                          <li class="list-group-item list-group-item-action">
                             {{ post.date | date: '%b %d %Y' }} <a href="{{ post.url }}">{{ post.title }}</a>
                           </li>
                         {% endfor %}
                         </ul>
                       </section>
+            </div>
+            <div class="card">
+                <h3 class="card-header text-center">
+                    Events
+                </h3>
+                <p class="card-text">
+                  Upcoming outings
+                </p>
+                <section id="event_content">
+                    <ul class="list-group list-group-flush">
+                        {% for post in site.events %}
+                            <li class="list-group-item list-group-item-action">
+                            {{ post.date | date: '%b %d %Y' }} <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
             </div>
             <div class="card">
                 <h3 class="card-header text-center">

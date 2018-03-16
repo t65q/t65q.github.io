@@ -1,0 +1,17 @@
+---
+layout: default
+title: Events
+---
+<div class="container-responsive mt-2">
+  <section id="main_content">
+    <h3>Events</h3>
+    <ul class="list-group list-group-flush">
+      {% for post in site.events %}
+        <li class="list-group-item list-group-item-action">
+          {{ post.date | date: '%b %d %Y' }} <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        <hr>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

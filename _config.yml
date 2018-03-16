@@ -2,7 +2,7 @@ title:          BSA Troop 65 Astoria
 tagline:        The power to change the world lives in your actions.
 url:            http://www.t65q.org
 paginate:       10
-theme: 		jekyll-theme-cayman
+future:		true
 
 author:
   name:         Aaron Helton
@@ -10,13 +10,13 @@ author:
   email:        ah@heltonfamily.info
 
 collections:
-  news:
-    output: true
-    paginate: 10
+  #news:
+  #  output: true
+  #  paginate: 10
   events:
     output: true
     paginate: 10
 
-gems:
+plugins:
   - jekyll-sitemap
 
