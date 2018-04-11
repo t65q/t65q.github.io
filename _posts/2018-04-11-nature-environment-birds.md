@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meeting Plan for 11 April 2018: Nature and Environment: Birds
+title: Meeting Plan for 11 April 2018 - Nature and Environment - Birds
 author: Scoutmaster Aaron
 ---
 First, announcements.
