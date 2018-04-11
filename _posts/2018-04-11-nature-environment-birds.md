@@ -30,3 +30,5 @@ Tonight's meeting will focus on identifying birds. We'll talk about what feature
 Additionally, the patrols will have their normal meetings, but the campers will need to finalize their camping plans, namely the menu and the activities they want to do.
 
 Given the need for timeliness during this round of state tests, we should plan to finish everything by 8:20. 
+
+Tonight's meeting plan is [here](https://docs.google.com/document/d/1RkoW-z_ZU4SnyeNFjdZCb7PSNKkwbho5M-XXzsBAk2g/edit?usp=sharing).
