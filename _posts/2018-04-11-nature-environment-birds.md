@@ -21,6 +21,7 @@ Upcoming outings:
 
 Other events:
 
+* On April 19 from 6:00 PM, Pack 90 is having a crossover ceremony for their Webelos II group, some of whom are crossing to Troop 65. We need as many Scouts as are available to participate. Please inidicate TONIGHT if you will be able to make it next week. I want to provide a headcount to the den leader by tomorrow. 
 * It's almost time to hold an outings workshop. Once the Scoutmasters meet with the Senior Patrol Leader, the Patrol Leaders Council will get to work with the troop on outings selection for next year.
 * Program planning for next year will coincide with the outings workshop. Stay tuned!
 * It's also almost time for an end of year celebration and Court of Honor to recognize the advancement and achievements we've earned, individually and as a troop. Planning for this will start shortly.
