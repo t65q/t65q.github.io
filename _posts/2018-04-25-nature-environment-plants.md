@@ -18,4 +18,4 @@ Other events:
 
 Tonight we will be talking about plants, their impact on the environment, and the many uses of plants. We also will take some time to learn about edible wild plants.
 
-The meeting plan is [here](https://docs.google.com/document/d/1KEMsFzCc2qP_QXys-mjY6S2lizPpvyC91xDDuzyLLV0/edit?usp=sharing)
+The meeting plan is [here](https://docs.google.com/document/d/13ytluuxRaR1HRLoAwt9rqET0dT_JM0adPBnCDbEl2C0/edit?usp=sharing)
