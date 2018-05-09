@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" media="screen">
+    
+        <link rel="alternate" type="application/atom+xml" title="BSA Troop 65 Astoria" href="/atom.xml">
+    
+        <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/javascripts/fontawesome-all.min.js"></script>
+    
+        <title>BSA Troop 65 Astoria</title>
+</head>
+    
+
+  <body>
+
+    <header>
+        <!--<div class="jumbotron text-center">-->
+          <a class="nav-link" href="/">
+            <div class="card bg-dark text-white text-center">
+              <div class="card-header">
+                <h1 class="card-title">
+                        BSA Troop 65 Astoria
+                </h1>
+                <h3 class="card-text">
+                        The power to change the world lives in your actions.
+                </h3>
+              </div>
+              <!--
+              <img class="card-img-bottom" src="/images/IMG_0357.jpg">
+              -->
+            </div>
+          </a>
+        <!--</div>-->
+    </header>
+
+    <div class="row-fluid">
+      <h1 id="jsical---javascript-parser-for-rfc5545">jsical - Javascript parser for rfc5545</h1>
+
+<p>This is a library to parse the iCalendar format defined in
+<a href="http://tools.ietf.org/html/rfc5545">rfc5545</a>, as well as similar formats like
+vCard.</p>
+
+<p>There are still some issues to be taken care of, but the library works for most
+cases. If you would like to help out and would like to discuss any API changes,
+please <a href="mailto:mozilla@kewis.ch">contact me</a> or create an issue.</p>
+
+<p>The initial goal was to use it as a replacement for libical in the <a href="http://www.mozilla.org/projects/calendar/">Mozilla
+Calendar Project</a>, but the library
+has been written with the web in mind. This library is now called ICAL.js and
+enables you to do all sorts of cool experiments with calendar data and the web.
+I am also aiming for a caldav.js when this is done. Most algorithms here were
+taken from <a href="https://github.com/libical/libical">libical</a>. If you are bugfixing
+this library, please check if the fix can be upstreamed to libical.</p>
+
+<p><a href="http://travis-ci.org/mozilla-comm/ical.js"><img src="https://secure.travis-ci.org/mozilla-comm/ical.js.png?branch=master" alt="Build Status" /></a> <a href="https://coveralls.io/r/mozilla-comm/ical.js"><img src="https://coveralls.io/repos/mozilla-comm/ical.js/badge.svg" alt="Coverage Status" /></a> <a href="http://badge.fury.io/js/ical.js"><img src="https://badge.fury.io/js/ical.js.svg" alt="npm version" /></a><br />
+<a href="https://david-dm.org/mozilla-comm/ical.js"><img src="https://david-dm.org/mozilla-comm/ical.js.svg" alt="Dependency Status" /></a> <a href="https://david-dm.org/mozilla-comm/ical.js#info=devDependencies"><img src="https://david-dm.org/mozilla-comm/ical.js/dev-status.svg" alt="devDependency Status" /></a></p>
+
+<h2 id="sandbox-and-validator">Sandbox and Validator</h2>
+
+<p>If you want to try out ICAL.js right now, there is a
+<a href="http://jsfiddle.net/kewisch/227efboL/">jsfiddle</a> set up and ready to use. Read
+on for documentation and example links.</p>
+
+<p>There is also a validator that demonstrates how to use the library in a webpage
+in the <a href="https://github.com/mozilla-comm/ical.js/tree/master/sandbox">sandbox/</a>
+subdirectory.</p>
+
+<p><a href="http://mozilla-comm.github.com/ical.js/validator.html">Try the validator online</a>, it always uses the latest copy of ICAL.js.</p>
+
+<h2 id="installing">Installing</h2>
+
+<p>You can install ICAL.js via <a href="https://www.npmjs.com/">npm</a>, if you would like to
+use it in node:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install ical.js
+</code></pre></div></div>
+
+<p>Alternatively, it is also available via <a href="http://bower.io/">bower</a> for front-end
+development:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bower install ical.js
+</code></pre></div></div>
+
+<p>ICAL.js has no dependencies and uses fairly basic JavaScript. Therefore, it
+should work in all versions of node and modern browsers. It does use getters
+and setters, so the minimum version of Internet Explorer is 9.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>For a few guides with code samples, please check out
+<a href="https://github.com/mozilla-comm/ical.js/wiki">the wiki</a>. If you prefer,
+full API documentation <a href="http://mozilla-comm.github.io/ical.js/api/">is available here</a>.
+If you are missing anything, please don’t hesitate to create an issue.</p>
+
+<h2 id="developing">Developing</h2>
+
+<p>To contribute to ICAL.js you need to set up the development environment. This
+requires node 0.10.x or later and grunt. Run the following steps to get
+started.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g grunt-cli  # Might need to run with sudo
+npm install .
+</code></pre></div></div>
+
+<p>You can now dive into the code, run the tests and check coverage.</p>
+
+<h3 id="tests">Tests</h3>
+
+<p>Tests can either be run via node or in the browser, but setting up the testing
+infrastructure requires <a href="https://github.com/joyent/node">node</a>. More
+information on how to set up and run tests can be found on
+<a href="https://github.com/mozilla-comm/ical.js/wiki/Running-Tests">the wiki</a>.</p>
+
+<h4 id="in-node-js">in node js</h4>
+
+<p>The quickest way to execute tests is using node. Running the following command
+will run all test suites: performance, acceptance and unit tests.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt test-node
+</code></pre></div></div>
+
+<p>You can also select a single suite, or run a single test.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt test-node:performance
+grunt test-node:acceptance
+grunt test-node:unit
+
+grunt test-node:single --test test/parse_test.js
+</code></pre></div></div>
+
+<p>Appending the <code class="highlighter-rouge">--debug</code> option to any of the above commands will run the
+test(s) with node-inspector. It will start the debugging server and open it in
+Chrome or Opera, depending on what you have installed. The tests will pause
+before execution starts so you can set breakpoints and debug the unit tests
+you are working on.</p>
+
+<p>If you run the performance tests comparison will be done between the current
+working version (latest), a previous build of ICAL.js (previous) and the
+unchanged copy of build/ical.js (from the master branch). See
+<a href="https://github.com/mozilla-comm/ical.js/wiki/Running-Tests">the wiki</a> for more
+details.</p>
+
+<h4 id="in-the-browser-with-karma">in the browser (with karma)</h4>
+
+<p>There are currently two ways to run the browser tests because we are currently
+experimenting with using <a href="http://karma-runner.github.io/">karma</a>. To run tests
+with karma, you can run the following targets:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt karma:unit             # run only the unit tests
+grunt karma:acceptance       # run the acceptance tests
+</code></pre></div></div>
+
+<p>Now you can visit <a href="http://localhost:9876">http://localhost:9876</a> in your
+browser. The test output will be shown in the console you started the grunt
+task from. You can also run a single test:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt karma:single --test test/parse_test.js
+</code></pre></div></div>
+
+<p>The mentioned targets all run the tests from start to finish. If you would like
+to debug the tests instead, you can add the <code class="highlighter-rouge">--debug</code> flag. Once you open the
+browser there will be a “debug” button. Clicking on the button opens am empty
+page, but if you open your browser’s developer tools you will see the test
+output. You can reload this page as often as you want until all tests are
+running.</p>
+
+<p>Last off, if you add the <code class="highlighter-rouge">--remote</code> option, karma will listen on all
+interfaces. This is useful if you are running the browser to test in a VM, for
+example when using <a href="https://www.modern.ie/virtualization-tools">Internet Exporer VM images</a>.</p>
+
+<h4 id="in-the-browser-the-old-way">in the browser (the old way)</h4>
+
+<p>Running <code class="highlighter-rouge">grunt test-server</code> will start a webserver and open the page in your
+browser. You can then select and execute tests as you wish. If you want to run
+all tests you can also open a second terminal and run <code class="highlighter-rouge">grunt test-browser</code></p>
+
+<h3 id="code-coverage">Code Coverage</h3>
+<p>ICAL.js is set up to calculate code coverage. You can
+<a href="https://coveralls.io/r/mozilla-comm/ical.js">view the coverage results</a>
+online, or run them locally to make sure new code is covered. Running <code class="highlighter-rouge">grunt
+coverage</code> will run the unit test suite measuring coverage. You can then open
+<code class="highlighter-rouge">coverage/lcov-report/index.html</code> to view the results in your browser.</p>
+
+<h3 id="linters">Linters</h3>
+<p>To make sure all ICAL.js code uses a common style, please run the linters using
+<code class="highlighter-rouge">grunt linters</code>. Please make sure you fix any issues shown by this command
+before sending a pull request.</p>
+
+<h3 id="documentation-1">Documentation</h3>
+<p>You can generate the documentation locally, this is also helpful to ensure the
+jsdoc you have written is valid. To do so, run <code class="highlighter-rouge">grunt jsdoc</code>. You will find the
+output in the <code class="highlighter-rouge">api/</code> subdirectory.</p>
+
+<h3 id="packaging">Packaging</h3>
+<p>When you are done with your work, you can run <code class="highlighter-rouge">grunt package</code> to create the
+single-file build for use in the browser, including its minified counterpart
+and the source map. These files need to be checked in (in a separate commit)
+and can be found in <a href="/javascripts/bower_components/ical.js/build/ical.js">build/ical.js</a>,
+<a href="/javascripts/bower_components/ical.js/build/ical.min.js">build/ical.min.js</a> and
+<a href="/javascripts/bower_components/ical.js/build/ical.min.js.map">build/ical.min.js.map</a>. Please see
+<a href="/javascripts/bower_components/ical.js/CONTRIBUTING.md">CONTRIBUTING.md</a> for more details.</p>
+
+<h2 id="license">License</h2>
+<p>ical.js is licensed under the
+<a href="https://www.mozilla.org/MPL/2.0/">Mozilla Public License</a>, version 2.0.</p>
+
+    </div>
+
+  </body>
+</html>
